@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Letter Guesser</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron">
+        <h1 class="text-center">Letter guesser</h1>
+        <h3 class="text-center">Guess the right letter</h3>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <h3 class="card-header">Letters</h3>
+                    <div class="card-body">
+                        <button id="button-A" class="btn btn-primary Letter" value='A'><span>A</span></button>
+                        <button id="button-B" class="btn btn-primary Letter" value='B'><span>B</span></button>
+                        <button id="button-C" class="btn btn-primary Letter" value='C'><span>C</span></button>
+                        <button id="button-D" class="btn btn-primary Letter" value='D'><span>D</span></button>
+                        <button id="button-E" class="btn btn-primary Letter" value='E'><span>E</span></button>
+                        <button id="button-F" class="btn btn-primary Letter" value='F'><span>F</span></button>
+                        <button id="button-G" class="btn btn-primary Letter" value='G'><span>G</span></button>
+                        <button id="button-H" class="btn btn-primary Letter" value='H'><span>H</span></button>
+                        <button id="button-I" class="btn btn-primary Letter" value='I'><span>I</span></button>
+                        <button id="button-J" class="btn btn-primary Letter" value='J'><span>J</span></button>
+                        <button id="button-K" class="btn btn-primary Letter" value='K'><span>K</span></button>
+                        <button id="button-L" class="btn btn-primary Letter" value='L'><span>L</span></button>
+                        <button id="button-M" class="btn btn-primary Letter" value='M'><span>M</span></button>
+                        <button id="button-N" class="btn btn-primary Letter"><span>N</span></button>
+                        <button id="button-O" class="btn btn-primary Letter"><span>O</span></button>
+                        <button id="button-P" class="btn btn-primary Letter"><span>P</span></button>
+                        <button id="button-Q" class="btn btn-primary Letter"><span>Q</span></button>
+                        <button id="button-R" class="btn btn-primary Letter"><span>R</span></button>
+                        <button id="button-S" class="btn btn-primary Letter"><span>S</span></button>
+                        <button id="button-T" class="btn btn-primary Letter"><span>T</span></button>
+                        <button id="button-U" class="btn btn-primary Letter"><span>U</span></button>
+                        <button id="button-V" class="btn btn-primary Letter"><span>V</span></button>
+                        <button id="button-W" class="btn btn-primary Letter"><span>W</span></button>
+                        <button id="button-X" class="btn btn-primary Letter"><span>X</span></button>
+                        <button id="button-Y" class="btn btn-primary Letter"><span>Y</span></button>
+                        <button id="button-Z" class="btn btn-primary Letter"><span>Z</span></button>
+                        <button id="button-clear" class="btn btn-dark clear" value="clear"><span>clear</span></button>
+                    </div>
+
+
+                    <!-- Result Card -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <h3 class="card-header">Guessed Letters</h3>
+                            <div class="card-body">
+                                <h1 id="Letter"></h1>
+                                <hr>
+                                <h1 id="result"></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        $(document).ready(function () {
+
+                            var isLetterChosen = false;
+                            var letter;
+                            var result;
+                            var correctLetter;
+
+                            $(".letter").on("click", function () {
+                                if (isLetterChosen === true) {
+                                    letter = $(this).val();
+                                    $("#letter").append(letter);
+                                }
+                                
+                                
+
+
+
+
+
+
+
+                            })
+                    </script>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
